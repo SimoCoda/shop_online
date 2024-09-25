@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body{
+    font-family: 'Raleway', sans-serif;
+    @apply bg-gradient-to-tl from-slate-500 to-blue-500 text-white bg-fixed h-full
+}
+.title{
+    @apply font-extrabold my-3 text-[2rem] text-center
+        2xl:text-[18rem] 2xl:fixed 2xl:bottom-0 2xl:z-0 2xl:leading-tight 2xl:left-0 2xl:h-[40%] 2xl:rotate-[270deg] 2xl:w-96 2xl:opacity-30 2xl:pointer-events-none
+}
+.component{@apply mt-20 pb-28}
+.page{@apply max-w-screen-xl mx-auto pt-5 px-5}
+.page-sm{@apply max-w-screen-sm mx-auto}
+    
+/*buttons*/
+.btn {@apply px-5 py-2 rounded-full m-1 font-bold text-sm text-center disabled:opacity-30 transition}
+.btn.dark {@apply bg-slate-700 hover:bg-slate-900 text-white}
+.btn.danger {@apply bg-red-700 hover:bg-red-800 text-white}
+.btn.primary {@apply bg-white hover:bg-sky-200 text-black}
+.btn.accent {@apply bg-pink-500 hover:bg-pink-600 text-white}
+.btn.success {@apply bg-green-500 hover:bg-green-700 text-white}
+.btn.outline {@apply border border-white}
+.btn.lg {@apply text-2xl;}
+
+/* forms */
+input[type="text"]{@apply text-black}
+input[type="number"]{@apply text-black}
+input[type="email"]{@apply text-black}
+input[type="password"]{@apply text-black}
+input[type="textarea"]{@apply text-black}
+input[type="text"].error{@apply text-red-300 border-2 border-red-600}
+input[type="number"].error{@apply text-red-300 border-2 border-red-600}
+input[type="email"].error{@apply text-red-300 border-2 border-red-600}
+input[type="password"].error{@apply text-red-300 border-2 border-red-600}
+input[type="textarea"].error{@apply text-red-300 border-2 border-red-600}
+
+/* tables */
+.table-auto th,.table-auto td{@apply border-b border-b-slate-400 py-4 px-2}
+.table-auto.hover tr:hover{@apply bg-blue-500}
+
