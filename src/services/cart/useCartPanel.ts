@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 export interface CartStateOverlay {
-    list: any;
+    list: [];
     open: boolean;
     toggle: () => void;
     openOverlay: () => void;
@@ -9,6 +9,7 @@ export interface CartStateOverlay {
 }
 
 export const useCartPanel = create<CartStateOverlay>((set,get)=>({
+    list: [],
     open: false,
     toggle: () => set({open: !get().open}),
     openOverlay: () => set({open: true}),

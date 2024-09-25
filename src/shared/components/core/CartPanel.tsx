@@ -1,12 +1,12 @@
 import { selectTotalCartCost, useCart, useCartPanel } from '@/services/cart';
-import React from 'react'
+// import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
 export const CartPanel = () => {
     const navigate = useNavigate();
     const closeCartPanel = useCartPanel(state => state.closeOverlay)
-    const stateCartPanel = useCartPanel(state => state.open)
-    let hideCartPanel: string | number | NodeJS.Timeout | undefined;
+    // const stateCartPanel = useCartPanel(state => state.open)
+    // let hideCartPanel: string | number | NodeJS.Timeout | undefined;
     const list = useCart(state => state.list)
     const totalCartCost = useCart(selectTotalCartCost)
 

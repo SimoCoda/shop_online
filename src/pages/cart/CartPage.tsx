@@ -1,5 +1,5 @@
 import { selectCartIsEmty, selectCartList, selectTotalCartCost, useCart } from '@/services/cart'
-import React from 'react'
+// import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 export const CartPage = () => {

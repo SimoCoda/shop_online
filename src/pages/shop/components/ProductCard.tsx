@@ -1,5 +1,5 @@
 import { Product } from '@/model/product';
-import React from 'react'
+// import React from 'react'
 
 interface ProductCardProps {
     product: Partial<Product>;

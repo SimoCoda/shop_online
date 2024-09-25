@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Product } from '@/model/product';
 import { pb } from '@/pocketbase';
 import { ProductCard } from './components/ProductCard';
@@ -33,7 +33,7 @@ export const ShopPage = () => {
   function addToCart(product: Partial<Product>){
     console.log(product)
     openCartPanel();
-    addToCartProduct(product);
+    addToCartProduct(product as Product);
   }
 
   return (

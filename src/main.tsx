@@ -5,7 +5,7 @@ import './index.css'
 import 'fontawesome-4.7/css/font-awesome.min.css'
 
 createRoot(document.getElementById('root')!).render(
-  // <StrictMode>
+  <StrictMode>
     <App />
-  //</StrictMode>
+  </StrictMode>
 )
